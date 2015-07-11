@@ -145,8 +145,24 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   //Code Here
 
 //removeItem(myGroceryList, 'chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
-//addItem(myGroceryList, 'Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
+var itemToRemove = 'pizza';
 
+  var removeItem = function(myGroceryList, itemToRemove){
+    for(var i=0; i<myGroceryList.length; i++){
+      if(myGroceryList[i] === itemToRemove){
+        myGroceryList.splice(i,1);
+        return myGroceryList[];
+        break;
+      }
+    }
+  }
+//addItem(myGroceryList, 'Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
+var itemToAdd = 'beer';
+
+var addItem = function(myGroceryList, itemToAdd){
+  myGroceryList.push(itemToAdd);
+  return myGroceryList;
+}
 
 
 //Next Problem
@@ -156,7 +172,13 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
 
   //Code Here
-
+  var maker = function(){
+    var myArr = [];
+    for(var i=0; i<216; i++){
+       myArr.push(i);
+    }
+    return myArr;
+  }
 
 
 //Next Problem
