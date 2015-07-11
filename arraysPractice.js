@@ -222,7 +222,15 @@ for(var i = 0; i < num2; i++){
 //Write a function that is given arr1 and arr2 as it's only arguments. Return the array which is longest.
 
   //Code Here
-
+  var longestArr = function(arr1, arr2){
+    if(arr1.length > arr2.length){
+      return arr1;
+    }
+    else
+    {
+      return arr2;
+    }
+  }
 
 /*As a continuation of the previous problem, write another function called 'both'.
   Your 'both' function will be given two arguments, arr1 and arr2 (from the previous example)
@@ -230,8 +238,17 @@ for(var i = 0; i < num2; i++){
 */
 
   //Code Here
-  
-  
+  var both = function(arr1, arr2){
+    var sameNumbers = [];
+    var longestArr = Math.max(arr1.length, arr2.length);
+    var sameNumber;
+    for(var i = 0; i<longestArr; i++){
+      if(arr1[i] === arr2[i]){
+        sameNumbers.push(arr1[i]);
+      }
+    }
+    return sameNumbers;
+  }
   
 
 //NEXT PROBLEM
@@ -270,6 +287,7 @@ array with those four objects. After that console.log the length of the Array an
 sure that it's equal to 4. */
 
   //Code Here
+  devMountainEmployees = [tyler, cahlan, ryan, colt];
 
 /*Now let's say Cahlan has a mental breakdown and has to take a leave of absence to 'find himself'.
 Loop through your devMountainEmployees until you find cahlan, then remove him from the array.*/
