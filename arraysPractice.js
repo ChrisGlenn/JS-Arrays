@@ -293,7 +293,9 @@ sure that it's equal to 4. */
 Loop through your devMountainEmployees until you find cahlan, then remove him from the array.*/
 
   //Code Here
-  
+  var employeeRoster = function(devMountainEmployees){
+    
+  }
 
 
 
